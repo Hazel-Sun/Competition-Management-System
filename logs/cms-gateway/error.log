@@ -1,0 +1,6 @@
+10:09:55.660 [reactor-http-nio-4] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/processinfo/list
+10:09:55.660 [reactor-http-nio-5] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/processinfo/compList
+10:09:55.660 [reactor-http-nio-6] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/processinfo/squadList
+10:10:27.780 [reactor-http-nio-8] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/auth/logout,异常信息:connection timed out: /172.20.10.2:9200
+10:10:37.466 [reactor-http-nio-1] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/auth/logout,异常信息:connection timed out: /172.20.10.2:9200
+13:55:41.234 [reactor-http-nio-4] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/user/getInfo

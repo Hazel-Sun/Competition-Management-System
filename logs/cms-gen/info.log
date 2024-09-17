@@ -1,0 +1,9 @@
+01:24:53.869 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+01:24:53.873 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+01:24:54.217 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client - [shutdown,454] - Shutdown rpc client, set status to shutdown
+01:24:54.218 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client - [shutdown,456] - Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@24c97f8b[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+01:24:54.218 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client - [closeConnection,591] - Close current connection 1684579736809_127.0.0.1_50767
+01:24:54.219 [nacos-grpc-client-executor-5204] INFO  c.a.n.c.r.c.g.GrpcClient - [printIfInfoEnabled,60] - [1684579736809_127.0.0.1_50767]Ignore complete event,isRunning:false,isAbandon=false
+01:24:54.226 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.c.g.GrpcClient - [shutdown,85] - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@369dc36[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 5205]
+01:24:54.374 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+01:24:54.380 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.

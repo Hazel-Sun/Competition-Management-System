@@ -1,0 +1,11 @@
+10:55:05.318 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+10:55:05.325 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+10:55:05.637 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client - [shutdown,454] - Shutdown rpc client, set status to shutdown
+10:55:05.637 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client - [shutdown,456] - Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@320a9ecd[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+10:55:05.638 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client - [closeConnection,591] - Close current connection 1685806309375_127.0.0.1_54775
+10:55:05.639 [nacos-grpc-client-executor-4017] INFO  c.a.n.c.r.c.g.GrpcClient - [printIfInfoEnabled,60] - [1685806309375_127.0.0.1_54775]Ignore complete event,isRunning:false,isAbandon=false
+10:55:05.644 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.c.g.GrpcClient - [shutdown,85] - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@5f7f9ba1[Running, pool size = 8, active threads = 0, queued tasks = 0, completed tasks = 4018]
+10:55:05.795 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,211] - dynamic-datasource start closing ....
+10:55:05.802 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2138] - {dataSource-1} closing ...
+10:55:05.806 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2211] - {dataSource-1} closed
+10:55:05.806 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,215] - dynamic-datasource all closed success,bye

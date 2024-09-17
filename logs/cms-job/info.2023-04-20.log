@@ -1,0 +1,74 @@
+02:22:56.290 [SpringApplicationShutdownHook] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+02:22:56.327 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+02:22:56.329 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+02:22:56.649 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client - [shutdown,454] - Shutdown rpc client, set status to shutdown
+02:22:56.649 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client - [shutdown,456] - Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@4332ecb5[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+02:22:56.649 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client - [closeConnection,591] - Close current connection 1681915703622_127.0.0.1_49631
+02:22:56.651 [nacos-grpc-client-executor-2305] INFO  c.a.n.c.r.c.g.GrpcClient - [printIfInfoEnabled,60] - [1681915703622_127.0.0.1_49631]Ignore complete event,isRunning:false,isAbandon=false
+02:22:56.655 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.c.g.GrpcClient - [shutdown,85] - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@53d5a237[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 2306]
+02:22:56.812 [SpringApplicationShutdownHook] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+02:22:56.812 [SpringApplicationShutdownHook] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+02:22:56.813 [SpringApplicationShutdownHook] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+02:22:56.814 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+02:22:56.817 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+19:29:55.014 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+19:29:55.452 [main] INFO  c.a.n.c.r.client - [lambda$createClient$0,80] - [RpcClientFactory] create a new rpc client of 3e686f86-3af0-4760-a109-2177e9bb5329_config-0
+19:29:55.488 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 24 ms to scan 1 urls, producing 3 keys and 6 values 
+19:29:55.511 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 12 ms to scan 1 urls, producing 4 keys and 9 values 
+19:29:55.525 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 12 ms to scan 1 urls, producing 3 keys and 10 values 
+19:29:55.543 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 14 ms to scan 1 urls, producing 1 keys and 5 values 
+19:29:55.557 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
+19:29:55.570 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 11 ms to scan 1 urls, producing 2 keys and 8 values 
+19:29:55.573 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [3e686f86-3af0-4760-a109-2177e9bb5329_config-0] RpcClient init label, labels = {module=config, Vipserver-Tag=null, source=sdk, Amory-Tag=null, Location-Tag=null, taskId=0, AppName=unknown}
+19:29:55.573 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [3e686f86-3af0-4760-a109-2177e9bb5329_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$468/0x0000000800f3d5f0
+19:29:55.574 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [3e686f86-3af0-4760-a109-2177e9bb5329_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$469/0x0000000800f3d818
+19:29:55.574 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [3e686f86-3af0-4760-a109-2177e9bb5329_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+19:29:55.575 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [3e686f86-3af0-4760-a109-2177e9bb5329_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+19:29:55.581 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [3e686f86-3af0-4760-a109-2177e9bb5329_config-0] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+19:29:56.095 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [3e686f86-3af0-4760-a109-2177e9bb5329_config-0] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1681990195920_127.0.0.1_52620
+19:29:56.096 [com.alibaba.nacos.client.remote.worker] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [3e686f86-3af0-4760-a109-2177e9bb5329_config-0] Notify connected event to listeners.
+19:29:56.096 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [3e686f86-3af0-4760-a109-2177e9bb5329_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+19:29:56.097 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [3e686f86-3af0-4760-a109-2177e9bb5329_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$480/0x000000080103d7d8
+19:29:56.161 [main] INFO  c.c.j.RuoYiJobApplication - [logStartupProfileInfo,637] - The following 1 profile is active: "dev"
+19:29:58.926 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9203"]
+19:29:58.927 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+19:29:58.927 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.70]
+19:29:59.169 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+19:29:59.862 [main] INFO  o.q.i.StdSchedulerFactory - [instantiate,1220] - Using default implementation for ThreadExecutor
+19:29:59.891 [main] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+19:29:59.892 [main] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.2 created.
+19:29:59.893 [main] INFO  o.q.s.RAMJobStore - [initialize,155] - RAMJobStore initialized.
+19:29:59.894 [main] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+19:29:59.895 [main] INFO  o.q.i.StdSchedulerFactory - [instantiate,1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+19:29:59.895 [main] INFO  o.q.i.StdSchedulerFactory - [instantiate,1378] - Quartz scheduler version: 2.3.2
+19:29:59.895 [main] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1cca3e8c
+19:30:00.545 [main] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+19:30:00.961 [main] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+19:30:02.070 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+19:30:04.325 [main] INFO  c.a.n.c.r.client - [lambda$createClient$0,80] - [RpcClientFactory] create a new rpc client of 8cbbfc86-13a7-4d59-afa0-09146430f7a9
+19:30:04.326 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [8cbbfc86-13a7-4d59-afa0-09146430f7a9] RpcClient init label, labels = {module=naming, source=sdk}
+19:30:04.327 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [8cbbfc86-13a7-4d59-afa0-09146430f7a9] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+19:30:04.327 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [8cbbfc86-13a7-4d59-afa0-09146430f7a9] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+19:30:04.328 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [8cbbfc86-13a7-4d59-afa0-09146430f7a9] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+19:30:04.328 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [8cbbfc86-13a7-4d59-afa0-09146430f7a9] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+19:30:04.453 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [8cbbfc86-13a7-4d59-afa0-09146430f7a9] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1681990204339_127.0.0.1_52665
+19:30:04.453 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [8cbbfc86-13a7-4d59-afa0-09146430f7a9] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+19:30:04.453 [com.alibaba.nacos.client.remote.worker] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [8cbbfc86-13a7-4d59-afa0-09146430f7a9] Notify connected event to listeners.
+19:30:04.453 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [8cbbfc86-13a7-4d59-afa0-09146430f7a9] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$480/0x000000080103d7d8
+19:30:04.478 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9203"]
+19:30:04.497 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP cms-job 192.168.1.4:9203 register finished
+19:30:04.737 [main] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+19:30:04.753 [main] INFO  c.c.j.RuoYiJobApplication - [logStarted,61] - Started RuoYiJobApplication in 10.307 seconds (JVM running for 11.358)
+19:30:04.761 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=cms-job-dev.yml, group=DEFAULT_GROUP
+19:30:04.761 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=cms-job.yml, group=DEFAULT_GROUP
+19:30:04.762 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=cms-job, group=DEFAULT_GROUP
+19:30:04.981 [nacos-grpc-client-executor-9] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [8cbbfc86-13a7-4d59-afa0-09146430f7a9] Receive server push request, request = NotifySubscriberRequest, requestId = 41
+19:30:04.986 [nacos-grpc-client-executor-9] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [8cbbfc86-13a7-4d59-afa0-09146430f7a9] Ack server push request, request = NotifySubscriberRequest, requestId = 41
+19:30:05.074 [RMI TCP Connection(9)-192.168.1.4] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cms.system.mapper.SysCompMapper">
+
+    <resultMap type="SysComp" id="SysCompResult">
+        <result property="compId"    column="comp_id"    />
+        <result property="compName"    column="comp_name"    />
+        <result property="compType"    column="comp_type"    />
+        <result property="compSponser"    column="comp_sponser"    />
+        <result property="compLink"    column="comp_link"    />
+        <result property="compStartTime"    column="comp_start_time"    />
+        <result property="compEndTime"    column="comp_end_time"    />
+        <result property="status"    column="status"    />
+    </resultMap>
+
+    <resultMap id="SysCompSysSquadResult" type="SysComp" extends="SysCompResult">
+        <collection property="sysSquadList" notNullColumn="sub_squad_id" javaType="java.util.List" resultMap="SysSquadResult" />
+    </resultMap>
+
+    <resultMap type="SysSquad" id="SysSquadResult">
+        <result property="squadId"    column="sub_squad_id"    />
+        <result property="squadName"    column="sub_squad_name"    />
+        <result property="squadLeader"    column="sub_squad_leader"    />
+        <result property="memberNum"    column="sub_member_num"    />
+        <result property="squadMember"    column="sub_squad_member"    />
+        <result property="squadTeacher"    column="sub_squad_teacher"    />
+        <result property="phone"    column="sub_phone"    />
+        <result property="email"    column="sub_email"    />
+        <result property="status"    column="sub_status"    />
+        <result property="createTime"    column="sub_create_time"    />
+        <result property="createBy"    column="sub_create_by"    />
+        <result property="updateTime"    column="sub_update_time"    />
+        <result property="updateBy"    column="sub_update_by"    />
+        <result property="compId"    column="sub_comp_id"    />
+    </resultMap>
+
+    <sql id="selectSysCompVo">
+        select comp_id, comp_name, comp_type, comp_sponser, comp_link, comp_start_time, comp_end_time, status from sys_comp
+    </sql>
+
+    <select id="selectSysCompList" parameterType="SysComp" resultMap="SysCompResult">
+        <include refid="selectSysCompVo"/>
+        <where>
+            <if test="compName != null  and compName != ''"> and comp_name like concat('%', #{compName}, '%')</if>
+            <if test="compType != null  and compType != ''"> and comp_type = #{compType}</if>
+            <if test="compSponser != null  and compSponser != ''"> and comp_sponser = #{compSponser}</if>
+            <if test="compLink != null  and compLink != ''"> and comp_link = #{compLink}</if>
+            <if test="compStartTime != null "> and comp_start_time = #{compStartTime}</if>
+            <if test="compEndTime != null "> and comp_end_time = #{compEndTime}</if>
+            <if test="status != null  and status != ''"> and status = #{status}</if>
+            <if test="params.beginTime  != null and params.beginTime != ''">
+                and date_format(comp_start_time,'%y%m%d') >= date_format(#{params.beginTime},'%y%m%d')
+            </if>
+            <if test="params.endTime  != null and params.endTime != ''">
+                and date_format(comp_end_time,'%y%m%d') <![CDATA[<=]]> date_format(#{params.endTime},'%y%m%d')
+            </if>
+        </where>
+    </select>
+
+    <select id="selectSysCompByCompId" parameterType="Long" resultMap="SysCompSysSquadResult">
+        select a.comp_id, a.comp_name, a.comp_type, a.comp_sponser, a.comp_link, a.comp_start_time, a.comp_end_time, a.status,
+               b.squad_id as sub_squad_id, b.squad_name as sub_squad_name, b.squad_leader as sub_squad_leader, b.member_num as sub_member_num, b.squad_member as sub_squad_member, b.squad_teacher as sub_squad_teacher, b.phone as sub_phone, b.email as sub_email, b.status as sub_status, b.create_time as sub_create_time, b.create_by as sub_create_by, b.update_time as sub_update_time, b.update_by as sub_update_by, b.comp_id as sub_comp_id
+        from sys_comp a
+                 left join sys_squad b on b.comp_id = a.comp_id
+        where a.comp_id = #{compId}
+    </select>
+
+    <select id="selectCompAll" resultMap="SysCompResult">
+        <include refid="selectSysCompVo"/>
+    </select>
+    <select id="selectCompListBySquadId" parameterType="Long" resultType="Long">
+        select c.comp_id
+        from sys_comp c
+                 left join sys_comp_squad cs on cs.comp_id = c.comp_id
+                 left join sys_squad s on s.squad_id = cs.squad_id
+        where s.squad_id = #{squadId}
+    </select>
+    <select id="selectCompListByHonorId" parameterType="Long" resultType="Long">
+        select c.comp_id
+        from sys_comp c
+                 left join sys_honor h on c.comp_id = h.comp_id
+        where h.honor_id = #{honorId}
+    </select>
+
+
+    <insert id="insertSysComp" parameterType="SysComp">
+        insert into sys_comp
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="compId != null">comp_id,</if>
+            <if test="compName != null">comp_name,</if>
+            <if test="compType != null">comp_type,</if>
+            <if test="compSponser != null">comp_sponser,</if>
+            <if test="compLink != null">comp_link,</if>
+            <if test="compStartTime != null">comp_start_time,</if>
+            <if test="compEndTime != null">comp_end_time,</if>
+            <if test="status != null">status,</if>
+
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="compId != null">#{compId},</if>
+            <if test="compName != null">#{compName},</if>
+            <if test="compType != null">#{compType},</if>
+            <if test="compSponser != null">#{compSponser},</if>
+            <if test="compLink != null">#{compLink},</if>
+            <if test="compStartTime != null">#{compStartTime},</if>
+            <if test="compEndTime != null">#{compEndTime},</if>
+            <if test="status != null">#{status},</if>
+
+         </trim>
+    </insert>
+
+    <update id="updateSysComp" parameterType="SysComp">
+        update sys_comp
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="compName != null">comp_name = #{compName},</if>
+            <if test="compType != null">comp_type = #{compType},</if>
+            <if test="compSponser != null">comp_sponser = #{compSponser},</if>
+            <if test="compLink != null">comp_link = #{compLink},</if>
+            <if test="compStartTime != null">comp_start_time = #{compStartTime},</if>
+            <if test="compEndTime != null">comp_end_time = #{compEndTime},</if>
+            <if test="status != null">status = #{status},</if>
+        </trim>
+        where comp_id = #{compId}
+    </update>
+
+    <delete id="deleteSysCompByCompId" parameterType="Long">
+        delete from sys_comp where comp_id = #{compId}
+    </delete>
+
+    <delete id="deleteSysCompByCompIds" parameterType="String">
+        delete from sys_comp where comp_id in
+        <foreach item="compId" collection="array" open="(" separator="," close=")">
+            #{compId}
+        </foreach>
+    </delete>
+
+    <delete id="deleteSysSquadByCompIds" parameterType="String">
+        delete from sys_squad where comp_id in
+        <foreach item="compId" collection="array" open="(" separator="," close=")">
+            #{compId}
+        </foreach>
+    </delete>
+
+    <delete id="deleteSysSquadByCompId" parameterType="Long">
+        delete from sys_squad where comp_id = #{compId}
+    </delete>
+
+    <insert id="batchSysSquad">
+        insert into sys_squad( squad_id, squad_name, squad_leader, member_num, squad_member, squad_teacher, phone, email, status, create_time, create_by, update_time, update_by, comp_id) values
+        <foreach item="item" index="index" collection="list" separator=",">
+            ( #{item.squadId}, #{item.squadName}, #{item.squadLeader}, #{item.memberNum}, #{item.squadMember}, #{item.squadTeacher}, #{item.phone}, #{item.email}, #{item.status}, #{item.createTime}, #{item.createBy}, #{item.updateTime}, #{item.updateBy}, #{item.compId})
+        </foreach>
+    </insert>
+</mapper>

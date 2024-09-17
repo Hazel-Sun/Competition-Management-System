@@ -1,0 +1,18 @@
+16:27:31.855 [task-1] ERROR c.c.s.a.f.RemoteLogFallbackFactory - [create,25] - 日志服务调用失败:[500 Internal Privoxy Error] during [POST] to [http://cms-system/operlog] [RemoteLogService#saveLog(SysOperLog,String)]: [<html>
+<head>
+ <title>500 Internal Privoxy Error</title>
+ <link rel="shortcut icon" href="http://config.privoxy.org/error-favicon.ico" type="image/x-icon"></head>
+<body>
+<h1>500 Internal Privoxy Error... (775 bytes)]
+16:27:55.081 [task-2] ERROR c.c.s.a.f.RemoteLogFallbackFactory - [create,25] - 日志服务调用失败:[500 Internal Privoxy Error] during [POST] to [http://cms-system/operlog] [RemoteLogService#saveLog(SysOperLog,String)]: [<html>
+<head>
+ <title>500 Internal Privoxy Error</title>
+ <link rel="shortcut icon" href="http://config.privoxy.org/error-favicon.ico" type="image/x-icon"></head>
+<body>
+<h1>500 Internal Privoxy Error... (775 bytes)]
+16:27:58.942 [task-3] ERROR c.c.s.a.f.RemoteLogFallbackFactory - [create,25] - 日志服务调用失败:[500 Internal Privoxy Error] during [POST] to [http://cms-system/operlog] [RemoteLogService#saveLog(SysOperLog,String)]: [<html>
+<head>
+ <title>500 Internal Privoxy Error</title>
+ <link rel="shortcut icon" href="http://config.privoxy.org/error-favicon.ico" type="image/x-icon"></head>
+<body>
+<h1>500 Internal Privoxy Error... (775 bytes)]

@@ -1,0 +1,15 @@
+12:01:36.415 [reactor-http-nio-8] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/honor/list
+12:01:36.414 [reactor-http-nio-1] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/public/list
+12:01:36.414 [reactor-http-nio-7] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/notice/list
+13:49:38.647 [reactor-http-nio-8] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/auth/login,异常信息:connection timed out: /192.168.1.9:9200
+13:49:54.312 [reactor-http-nio-7] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/auth/login,异常信息:connection timed out: /192.168.1.9:9200
+13:50:51.846 [reactor-http-nio-3] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/auth/login,异常信息:Connection prematurely closed BEFORE response
+13:57:41.967 [reactor-http-nio-4] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/auth/login,异常信息:connection timed out: /172.20.235.144:9200
+13:58:46.663 [reactor-http-nio-2] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/auth/login,异常信息:connection timed out: /172.20.235.144:9200
+19:40:28.472 [reactor-http-nio-7] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/auth/logout,异常信息:Network is unreachable: /172.20.10.2:9200
+19:40:43.491 [reactor-http-nio-1] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/system/dict/data/type/sys_public_status,异常信息:connection timed out: /172.20.10.2:9201
+19:40:43.491 [reactor-http-nio-8] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/system/public/list,异常信息:connection timed out: /172.20.10.2:9201
+19:40:43.491 [reactor-http-nio-7] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/system/public/compList,异常信息:connection timed out: /172.20.10.2:9201
+19:40:44.867 [reactor-http-nio-2] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/system/notice/list,异常信息:connection timed out: /172.20.10.2:9201
+19:40:44.867 [reactor-http-nio-4] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/system/public/list,异常信息:connection timed out: /172.20.10.2:9201
+19:40:44.868 [reactor-http-nio-3] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/system/honor/list,异常信息:connection timed out: /172.20.10.2:9201

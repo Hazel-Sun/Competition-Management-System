@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cms-common-core" />
+        <module name="cms-api-system" />
+        <module name="cms-gateway" />
+        <module name="cms-common-datascope" />
+        <module name="cms-common-security" />
+        <module name="cms-common-swagger" />
+        <module name="cms-visual-monitor" />
+        <module name="cms-auth" />
+        <module name="cms-common-redis" />
+        <module name="cms-modules-system" />
+        <module name="cms-common-log" />
+        <module name="cms-modules-job" />
+        <module name="cms-common-datasource" />
+        <module name="cms-modules-file" />
+        <module name="cms-common-seata" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cms-api" target="1.8" />
+      <module name="cms-api-system" target="1.8" />
+      <module name="cms-auth" target="1.8" />
+      <module name="cms-common" target="1.8" />
+      <module name="cms-common-core" target="1.8" />
+      <module name="cms-common-datascope" target="1.8" />
+      <module name="cms-common-datasource" target="1.8" />
+      <module name="cms-common-log" target="1.8" />
+      <module name="cms-common-redis" target="1.8" />
+      <module name="cms-common-seata" target="1.8" />
+      <module name="cms-common-security" target="1.8" />
+      <module name="cms-common-swagger" target="1.8" />
+      <module name="cms-gateway" target="1.8" />
+      <module name="cms-modules" target="1.8" />
+      <module name="cms-modules-file" target="1.8" />
+      <module name="cms-modules-job" target="1.8" />
+      <module name="cms-modules-system" target="1.8" />
+      <module name="cms-visual" target="1.8" />
+      <module name="cms-visual-monitor" target="1.8" />
+      <module name="Competition-Management-System" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

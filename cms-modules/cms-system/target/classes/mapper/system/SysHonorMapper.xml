@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cms.system.mapper.SysHonorMapper">
+
+    <resultMap type="SysHonor" id="SysHonorResult">
+        <result property="honorId"    column="honor_id"    />
+        <result property="honorName"    column="honor_name"    />
+        <result property="honorType"    column="honor_type"    />
+        <result property="compId"    column="comp_id"    />
+        <result property="honorContent"    column="honor_content"    />
+        <result property="honorDate"    column="honor_date"    />
+        <result property="status"    column="status"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="createBy"    column="create_by"    />
+        <result property="squadId"    column="squad_id"   />
+        <association property="comp"     column="comp_id"  javaType="SysComp" resultMap="SysCompResult"/>
+        <association property="squad"       column="squad_id"   javaType="SysSquad" resultMap="SysSquadResult"/>
+    </resultMap>
+    <resultMap id="SysCompResult" type="SysComp">
+        <result property="compId"       column="comp_id"        />
+        <result property="compName"     column="comp_name"      />
+    </resultMap>
+    <resultMap id="SysSquadResult" type="SysSquad">
+        <result property="squadId"      column="squad_id"       />
+        <result property="squadName"    column="squad_name"     />
+        <result property="squadLeader"  column="squad_leader"   />
+        <result property="squadTeacher" column="squad_teacher"  />
+        <result property="squadMember"  column="squad_member"   />
+    </resultMap>
+
+    <sql id="selectSysHonorVo">
+        select h.honor_id, h.honor_name, h.honor_type, h.squad_id, h.comp_id, h.honor_content, h.honor_date, h.status, h.create_time, h.create_by
+        from sys_honor h
+                left join sys_comp c on c.comp_id = h.comp_id
+                left join sys_squad s on s.squad_id =h.squad_id
+                left join sys_user_squad us on us.squad_id =s.squad_id
+    </sql>
+
+    <select id="selectSysHonorList" parameterType="SysHonor" resultMap="SysHonorResult">
+        select h.honor_id, h.honor_name, h.honor_type, h.squad_id, h.comp_id, h.honor_content, h.honor_date, h.status, h.create_time, h.create_by,
+        c.comp_name,s.squad_name,s.squad_leader,s.squad_teacher,s.squad_member
+        from sys_honor h
+        left join sys_comp c on c.comp_id = h.comp_id
+        left join sys_squad s on s.squad_id =h.squad_id
+        left join sys_user_squad us on us.squad_id =s.squad_id
+
+        <where>
+            <if test="honorName != null  and honorName != ''"> and h.honor_name like concat('%', #{honorName}, '%')</if>
+            <if test="honorType != null  and honorType != ''"> and h.honor_type = #{honorType}</if>
+            <if test="squadId != null "> and h.squad_id = #{squadId}</if>
+            <if test="compId != null "> and h.comp_id = #{compId}</if>
+            <if test="honorContent != null  and honorContent != ''"> and h.honor_content = #{honorContent}</if>
+            <if test="honorDate != null "> and h.honor_date = #{honorDate}</if>
+            <if test="status != null  and status != ''"> and h.status = #{status}</if>
+            <if test="params.beginTime  != null and params.beginTime != ''">
+                and date_format(h.honor_date,'%y%m%d') >= date_format(#{params.beginTime},'%y%m%d')
+            </if>
+            <if test="params.endTime  != null and params.endTime != ''">
+                and date_format(h.honor_date,'%y%m%d') <![CDATA[<=]]> date_format(#{params.endTime},'%y%m%d')
+            </if>
+            <!-- 数据范围过滤 -->
+            ${params.dataScope}
+        </where>
+    </select>
+
+    <select id="selectSysHonorByHonorId" parameterType="Long" resultMap="SysHonorResult">
+        <include refid="selectSysHonorVo"/>
+        where h.honor_id = #{honorId}
+    </select>
+
+    <insert id="insertSysHonor" parameterType="SysHonor" useGeneratedKeys="true" keyProperty="honorId">
+        insert into sys_honor
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="honorName != null">honor_name,</if>
+            <if test="honorType != null">honor_type,</if>
+            <if test="squadId != null">squad_id,</if>
+            <if test="compId != null">comp_id,</if>
+            <if test="honorContent != null">honor_content,</if>
+            <if test="honorDate != null">honor_date,</if>
+            <if test="status != null">status,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="createBy != null">create_by,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="honorName != null">#{honorName},</if>
+            <if test="honorType != null">#{honorType},</if>
+            <if test="squadId != null">#{squadId},</if>
+            <if test="compId != null">#{compId},</if>
+            <if test="honorContent != null">#{honorContent},</if>
+            <if test="honorDate != null">#{honorDate},</if>
+            <if test="status != null">#{status},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="createBy != null">#{createBy},</if>
+         </trim>
+    </insert>
+
+    <update id="updateSysHonor" parameterType="SysHonor">
+        update sys_honor
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="honorName != null">honor_name = #{honorName},</if>
+            <if test="honorType != null">honor_type = #{honorType},</if>
+            <if test="squadId != null">squad_id = #{squadId},</if>
+            <if test="compId != null">comp_id = #{compId},</if>
+            <if test="honorContent != null">honor_content = #{honorContent},</if>
+            <if test="honorDate != null">honor_date = #{honorDate},</if>
+            <if test="status != null">status = #{status},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="createBy != null">create_by = #{createBy},</if>
+        </trim>
+        where honor_id = #{honorId}
+    </update>
+
+    <delete id="deleteSysHonorByHonorId" parameterType="Long">
+        delete from sys_honor where honor_id = #{honorId}
+    </delete>
+
+    <delete id="deleteSysHonorByHonorIds" parameterType="String">
+        delete from sys_honor where honor_id in
+        <foreach item="honorId" collection="array" open="(" separator="," close=")">
+            #{honorId}
+        </foreach>
+    </delete>
+</mapper>

@@ -1,0 +1,21 @@
+23:18:08.923 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+23:18:08.938 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+23:18:09.256 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client - [shutdown,454] - Shutdown rpc client, set status to shutdown
+23:18:09.258 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client - [shutdown,456] - Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@1def3cac[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+23:18:09.258 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client - [closeConnection,591] - Close current connection 1685026070219_127.0.0.1_65005
+23:18:09.263 [nacos-grpc-client-executor-4346] INFO  c.a.n.c.r.c.g.GrpcClient - [printIfInfoEnabled,60] - [1685026070219_127.0.0.1_65005]Ignore complete event,isRunning:false,isAbandon=false
+23:18:09.269 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.c.g.GrpcClient - [shutdown,85] - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@2d508599[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 4347]
+23:27:19.015 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+23:27:19.745 [main] INFO  c.a.n.c.r.client - [lambda$createClient$0,80] - [RpcClientFactory] create a new rpc client of 417afe53-9556-4282-9c01-73785b1fb175_config-0
+23:27:19.828 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 45 ms to scan 1 urls, producing 3 keys and 6 values 
+23:27:19.880 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 29 ms to scan 1 urls, producing 4 keys and 9 values 
+23:27:19.903 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 19 ms to scan 1 urls, producing 3 keys and 10 values 
+23:27:19.928 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 20 ms to scan 1 urls, producing 1 keys and 5 values 
+23:27:19.967 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 34 ms to scan 1 urls, producing 1 keys and 7 values 
+23:27:19.984 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 14 ms to scan 1 urls, producing 2 keys and 8 values 
+23:27:19.990 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [417afe53-9556-4282-9c01-73785b1fb175_config-0] RpcClient init label, labels = {module=config, Vipserver-Tag=null, source=sdk, Amory-Tag=null, Location-Tag=null, taskId=0, AppName=unknown}
+23:27:19.991 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [417afe53-9556-4282-9c01-73785b1fb175_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$468/0x0000000800f44ea8
+23:27:19.992 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [417afe53-9556-4282-9c01-73785b1fb175_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$469/0x0000000800f450d0
+23:27:19.993 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [417afe53-9556-4282-9c01-73785b1fb175_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+23:27:19.993 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [417afe53-9556-4282-9c01-73785b1fb175_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+23:27:20.007 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [417afe53-9556-4282-9c01-73785b1fb175_config-0] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}

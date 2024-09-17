@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cms.system.mapper.SysPublicMapper">
+
+    <resultMap type="SysPublic" id="SysPublicResult">
+        <result property="publicId"    column="public_id"    />
+        <result property="publicTitle"    column="public_title"    />
+        <result property="publicPic"    column="public_pic"    />
+        <result property="publicContent"    column="public_content"    />
+        <result property="publicStatus"    column="public_status"    />
+        <result property="createBy"    column="create_by"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="compId"    column="comp_id"    />
+        <association property="comp"     column="comp_id"  javaType="SysComp" resultMap="SysCompResult"/>
+    </resultMap>
+    <resultMap id="SysCompResult" type="SysComp">
+        <result property="compId"       column="comp_id"        />
+        <result property="compName"     column="comp_name"      />
+    </resultMap>
+
+    <sql id="selectSysPublicVo">
+        select p.public_id, p.public_title, p.public_pic, p.public_content, p.public_status, p.create_by, p.create_time, p.comp_id
+        from sys_public p
+                 left join sys_comp c on c.comp_id = p.comp_id
+    </sql>
+
+    <select id="selectSysPublicList" parameterType="SysPublic" resultMap="SysPublicResult">
+        select p.public_id, p.public_title, p.public_pic, p.public_content, p.public_status, p.create_by, p.create_time, p.comp_id,
+               c.comp_name
+        from sys_public p
+        left join sys_comp c on c.comp_id = p.comp_id
+        <where>
+            <if test="publicTitle != null  and publicTitle != ''"> and p.public_title = #{publicTitle}</if>
+            <if test="publicPic != null  and publicPic != ''"> and p.public_pic = #{publicPic}</if>
+            <if test="publicContent != null  and publicContent != ''"> and p.public_content = #{publicContent}</if>
+            <if test="publicStatus != null  and publicStatus != ''"> and p.public_status = #{publicStatus}</if>
+            <if test="compId != null "> and p.comp_id = #{compId}</if>
+        </where>
+    </select>
+
+    <select id="selectSysPublicByPublicId" parameterType="Long" resultMap="SysPublicResult">
+        <include refid="selectSysPublicVo"/>
+        where p.public_id = #{publicId}
+    </select>
+
+    <insert id="insertSysPublic" parameterType="SysPublic">
+        insert into sys_public
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="publicId != null">public_id,</if>
+            <if test="publicTitle != null and publicTitle != ''">public_title,</if>
+            <if test="publicPic != null">public_pic,</if>
+            <if test="publicContent != null and publicContent != ''">public_content,</if>
+            <if test="publicStatus != null">public_status,</if>
+            <if test="createBy != null">create_by,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="compId != null">comp_id,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="publicId != null">#{publicId},</if>
+            <if test="publicTitle != null and publicTitle != ''">#{publicTitle},</if>
+            <if test="publicPic != null">#{publicPic},</if>
+            <if test="publicContent != null and publicContent != ''">#{publicContent},</if>
+            <if test="publicStatus != null">#{publicStatus},</if>
+            <if test="createBy != null">#{createBy},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="compId != null">#{compId},</if>
+         </trim>
+    </insert>
+
+    <update id="updateSysPublic" parameterType="SysPublic">
+        update sys_public
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="publicTitle != null and publicTitle != ''">public_title = #{publicTitle},</if>
+            <if test="publicPic != null">public_pic = #{publicPic},</if>
+            <if test="publicContent != null and publicContent != ''">public_content = #{publicContent},</if>
+            <if test="publicStatus != null">public_status = #{publicStatus},</if>
+            <if test="createBy != null">create_by = #{createBy},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="compId != null">comp_id = #{compId},</if>
+        </trim>
+        where public_id = #{publicId}
+    </update>
+
+    <delete id="deleteSysPublicByPublicId" parameterType="Long">
+        delete from sys_public where public_id = #{publicId}
+    </delete>
+
+    <delete id="deleteSysPublicByPublicIds" parameterType="String">
+        delete from sys_public where public_id in
+        <foreach item="publicId" collection="array" open="(" separator="," close=")">
+            #{publicId}
+        </foreach>
+    </delete>
+</mapper>

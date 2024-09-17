@@ -1,0 +1,108 @@
+08:57:20.186 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - [report,40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field remoteLogService in com.cms.common.log.service.AsyncLogService required a bean of type 'com.cms.system.api.RemoteLogService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.cms.system.api.RemoteLogService' in your configuration.
+
+08:57:41.112 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - [report,40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field remoteLogService in com.cms.common.log.service.AsyncLogService required a bean of type 'com.cms.system.api.RemoteLogService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.cms.system.api.RemoteLogService' in your configuration.
+
+08:59:20.982 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - [report,40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field remoteLogService in com.cms.common.log.service.AsyncLogService required a bean of type 'com.cms.system.api.RemoteLogService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.cms.system.api.RemoteLogService' in your configuration.
+
+09:03:47.637 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - [report,40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field remoteLogService in com.cms.common.log.service.AsyncLogService required a bean of type 'com.cms.system.api.RemoteLogService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.cms.system.api.RemoteLogService' in your configuration.
+
+09:04:33.829 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - [report,40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field remoteLogService in com.cms.common.log.service.AsyncLogService required a bean of type 'com.cms.system.api.RemoteLogService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.cms.system.api.RemoteLogService' in your configuration.
+
+09:07:28.339 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - [report,40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field remoteLogService in com.cms.common.log.service.AsyncLogService required a bean of type 'com.cms.system.api.RemoteLogService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.cms.system.api.RemoteLogService' in your configuration.
+

@@ -1,0 +1,7 @@
+23:23:42.837 [reactor-http-nio-1] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/system/squad/184,异常信息:Network is unreachable: /192.168.1.3:9201
+23:23:46.585 [reactor-http-nio-2] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/system/user/getInfo,异常信息:Network is unreachable: /192.168.1.3:9201
+23:23:46.611 [reactor-http-nio-4] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/auth/logout,异常信息:Network is unreachable: /192.168.1.3:9200
+23:25:11.695 [reactor-http-nio-6] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/system/user/getInfo,异常信息:connection timed out: /192.168.1.3:9201
+23:25:21.429 [reactor-http-nio-8] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/auth/logout,异常信息:connection timed out: /192.168.1.3:9200
+23:25:23.993 [reactor-http-nio-1] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/system/user/getInfo,异常信息:connection timed out: /192.168.1.3:9201
+23:26:06.545 [reactor-http-nio-3] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/system/user/getInfo,异常信息:connection timed out: /192.168.1.3:9201

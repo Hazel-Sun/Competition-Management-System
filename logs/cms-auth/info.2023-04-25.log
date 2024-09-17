@@ -1,0 +1,96 @@
+00:19:45.219 [nacos-grpc-client-executor-6534] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [de957947-fa2f-40c4-9887-0cc84c715129] Receive server push request, request = NotifySubscriberRequest, requestId = 372
+00:19:45.237 [nacos-grpc-client-executor-6534] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [de957947-fa2f-40c4-9887-0cc84c715129] Ack server push request, request = NotifySubscriberRequest, requestId = 372
+00:20:00.701 [nacos-grpc-client-executor-6537] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [de957947-fa2f-40c4-9887-0cc84c715129] Receive server push request, request = NotifySubscriberRequest, requestId = 377
+00:20:00.704 [nacos-grpc-client-executor-6537] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [de957947-fa2f-40c4-9887-0cc84c715129] Ack server push request, request = NotifySubscriberRequest, requestId = 377
+00:22:14.831 [nacos-grpc-client-executor-6568] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [de957947-fa2f-40c4-9887-0cc84c715129] Receive server push request, request = NotifySubscriberRequest, requestId = 381
+00:22:14.833 [nacos-grpc-client-executor-6568] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [de957947-fa2f-40c4-9887-0cc84c715129] Ack server push request, request = NotifySubscriberRequest, requestId = 381
+00:22:29.243 [nacos-grpc-client-executor-6571] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [de957947-fa2f-40c4-9887-0cc84c715129] Receive server push request, request = NotifySubscriberRequest, requestId = 386
+00:22:29.245 [nacos-grpc-client-executor-6571] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [de957947-fa2f-40c4-9887-0cc84c715129] Ack server push request, request = NotifySubscriberRequest, requestId = 386
+16:08:31.254 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+16:08:31.258 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+16:08:31.572 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client - [shutdown,454] - Shutdown rpc client, set status to shutdown
+16:08:31.573 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client - [shutdown,456] - Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@470fc077[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+16:08:31.573 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client - [closeConnection,591] - Close current connection 1682261547716_127.0.0.1_62016
+16:08:31.599 [nacos-grpc-client-executor-8075] INFO  c.a.n.c.r.c.g.GrpcClient - [printIfInfoEnabled,60] - [1682261547716_127.0.0.1_62016]Ignore complete event,isRunning:false,isAbandon=false
+16:08:31.606 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.c.g.GrpcClient - [shutdown,85] - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@6468f245[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 8076]
+16:09:08.570 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+16:09:09.365 [main] INFO  c.a.n.c.r.client - [lambda$createClient$0,80] - [RpcClientFactory] create a new rpc client of d54c1bb7-ef81-4dd1-bc41-e800d1ad3ba2_config-0
+16:09:09.526 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 93 ms to scan 1 urls, producing 3 keys and 6 values 
+16:09:09.586 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 26 ms to scan 1 urls, producing 4 keys and 9 values 
+16:09:09.612 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 21 ms to scan 1 urls, producing 3 keys and 10 values 
+16:09:09.650 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 25 ms to scan 1 urls, producing 1 keys and 5 values 
+16:09:09.694 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 35 ms to scan 1 urls, producing 1 keys and 7 values 
+16:09:09.715 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 16 ms to scan 1 urls, producing 2 keys and 8 values 
+16:09:09.725 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [d54c1bb7-ef81-4dd1-bc41-e800d1ad3ba2_config-0] RpcClient init label, labels = {module=config, Vipserver-Tag=null, source=sdk, Amory-Tag=null, Location-Tag=null, taskId=0, AppName=unknown}
+16:09:09.726 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [d54c1bb7-ef81-4dd1-bc41-e800d1ad3ba2_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$468/0x0000000800f1d100
+16:09:09.727 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [d54c1bb7-ef81-4dd1-bc41-e800d1ad3ba2_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$469/0x0000000800f1d328
+16:09:09.727 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [d54c1bb7-ef81-4dd1-bc41-e800d1ad3ba2_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+16:09:09.728 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [d54c1bb7-ef81-4dd1-bc41-e800d1ad3ba2_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+16:09:09.744 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [d54c1bb7-ef81-4dd1-bc41-e800d1ad3ba2_config-0] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+16:09:10.603 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [d54c1bb7-ef81-4dd1-bc41-e800d1ad3ba2_config-0] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1682410150377_127.0.0.1_50739
+16:09:10.604 [com.alibaba.nacos.client.remote.worker] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [d54c1bb7-ef81-4dd1-bc41-e800d1ad3ba2_config-0] Notify connected event to listeners.
+16:09:10.604 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [d54c1bb7-ef81-4dd1-bc41-e800d1ad3ba2_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+16:09:10.604 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [d54c1bb7-ef81-4dd1-bc41-e800d1ad3ba2_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$480/0x00000008010258c0
+16:09:10.674 [main] INFO  c.c.a.RuoYiAuthApplication - [logStartupProfileInfo,637] - The following 1 profile is active: "dev"
+16:09:12.586 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9200"]
+16:09:12.587 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+16:09:12.587 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.70]
+16:09:12.733 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+16:09:14.001 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+16:09:14.964 [main] INFO  c.a.n.c.r.client - [lambda$createClient$0,80] - [RpcClientFactory] create a new rpc client of 52856c2b-816b-4412-a1aa-dc18891603c1
+16:09:14.964 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] RpcClient init label, labels = {module=naming, source=sdk}
+16:09:14.966 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+16:09:14.966 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+16:09:14.966 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+16:09:14.967 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+16:09:15.097 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1682410154980_127.0.0.1_50752
+16:09:15.097 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+16:09:15.097 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$480/0x00000008010258c0
+16:09:15.097 [com.alibaba.nacos.client.remote.worker] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Notify connected event to listeners.
+16:09:15.138 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9200"]
+16:09:15.162 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP cms-auth 10.110.28.53:9200 register finished
+16:09:15.185 [main] INFO  c.c.a.RuoYiAuthApplication - [logStarted,61] - Started RuoYiAuthApplication in 7.483 seconds (JVM running for 8.861)
+16:09:15.193 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=cms-auth.yml, group=DEFAULT_GROUP
+16:09:15.194 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=cms-auth, group=DEFAULT_GROUP
+16:09:15.194 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=cms-auth-dev.yml, group=DEFAULT_GROUP
+16:09:15.351 [RMI TCP Connection(9)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:09:15.679 [nacos-grpc-client-executor-10] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Receive server push request, request = NotifySubscriberRequest, requestId = 406
+16:09:15.681 [nacos-grpc-client-executor-10] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Ack server push request, request = NotifySubscriberRequest, requestId = 406
+16:10:56.840 [nacos-grpc-client-executor-53] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Receive server push request, request = NotifySubscriberRequest, requestId = 431
+16:10:56.841 [nacos-grpc-client-executor-53] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Ack server push request, request = NotifySubscriberRequest, requestId = 431
+16:17:24.914 [nacos-grpc-client-executor-170] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Receive server push request, request = NotifySubscriberRequest, requestId = 433
+16:17:24.918 [nacos-grpc-client-executor-170] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Ack server push request, request = NotifySubscriberRequest, requestId = 433
+16:17:37.903 [nacos-grpc-client-executor-173] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Receive server push request, request = NotifySubscriberRequest, requestId = 437
+16:17:37.904 [nacos-grpc-client-executor-173] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Ack server push request, request = NotifySubscriberRequest, requestId = 437
+16:26:39.849 [nacos-grpc-client-executor-291] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Receive server push request, request = NotifySubscriberRequest, requestId = 440
+16:26:39.857 [nacos-grpc-client-executor-291] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Ack server push request, request = NotifySubscriberRequest, requestId = 440
+16:26:54.966 [nacos-grpc-client-executor-294] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Receive server push request, request = NotifySubscriberRequest, requestId = 444
+16:26:54.972 [nacos-grpc-client-executor-294] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Ack server push request, request = NotifySubscriberRequest, requestId = 444
+16:30:58.622 [nacos-grpc-client-executor-350] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Receive server push request, request = NotifySubscriberRequest, requestId = 454
+16:30:58.625 [nacos-grpc-client-executor-350] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Ack server push request, request = NotifySubscriberRequest, requestId = 454
+16:31:13.280 [nacos-grpc-client-executor-353] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Receive server push request, request = NotifySubscriberRequest, requestId = 458
+16:31:13.281 [nacos-grpc-client-executor-353] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Ack server push request, request = NotifySubscriberRequest, requestId = 458
+20:01:09.063 [nacos-grpc-client-executor-2219] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Receive server push request, request = NotifySubscriberRequest, requestId = 463
+20:01:09.086 [nacos-grpc-client-executor-2219] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Ack server push request, request = NotifySubscriberRequest, requestId = 463
+20:06:28.235 [nacos-grpc-client-executor-2287] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Receive server push request, request = NotifySubscriberRequest, requestId = 468
+20:06:28.238 [nacos-grpc-client-executor-2287] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Ack server push request, request = NotifySubscriberRequest, requestId = 468
+20:20:42.474 [nacos-grpc-client-executor-2461] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Receive server push request, request = NotifySubscriberRequest, requestId = 472
+20:20:42.482 [nacos-grpc-client-executor-2461] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Ack server push request, request = NotifySubscriberRequest, requestId = 472
+20:20:57.289 [nacos-grpc-client-executor-2464] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Receive server push request, request = NotifySubscriberRequest, requestId = 477
+20:20:57.290 [nacos-grpc-client-executor-2464] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Ack server push request, request = NotifySubscriberRequest, requestId = 477
+20:47:25.730 [nacos-grpc-client-executor-2792] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Receive server push request, request = NotifySubscriberRequest, requestId = 481
+20:47:25.742 [nacos-grpc-client-executor-2792] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Ack server push request, request = NotifySubscriberRequest, requestId = 481
+20:47:40.733 [nacos-grpc-client-executor-2796] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Receive server push request, request = NotifySubscriberRequest, requestId = 486
+20:47:40.736 [nacos-grpc-client-executor-2796] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Ack server push request, request = NotifySubscriberRequest, requestId = 486
+21:02:08.502 [nacos-grpc-client-executor-2975] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Receive server push request, request = NotifySubscriberRequest, requestId = 490
+21:02:08.505 [nacos-grpc-client-executor-2975] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Ack server push request, request = NotifySubscriberRequest, requestId = 490
+21:02:24.918 [nacos-grpc-client-executor-2978] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Receive server push request, request = NotifySubscriberRequest, requestId = 495
+21:02:24.920 [nacos-grpc-client-executor-2978] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Ack server push request, request = NotifySubscriberRequest, requestId = 495
+21:34:20.846 [nacos-grpc-client-executor-3373] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Receive server push request, request = NotifySubscriberRequest, requestId = 499
+21:34:20.851 [nacos-grpc-client-executor-3373] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Ack server push request, request = NotifySubscriberRequest, requestId = 499
+21:34:34.701 [nacos-grpc-client-executor-3375] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Receive server push request, request = NotifySubscriberRequest, requestId = 504
+21:34:34.708 [nacos-grpc-client-executor-3375] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Ack server push request, request = NotifySubscriberRequest, requestId = 504
+21:36:51.422 [nacos-grpc-client-executor-3404] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Receive server push request, request = NotifySubscriberRequest, requestId = 508
+21:36:51.426 [nacos-grpc-client-executor-3404] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Ack server push request, request = NotifySubscriberRequest, requestId = 508
+21:37:04.969 [nacos-grpc-client-executor-3408] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Receive server push request, request = NotifySubscriberRequest, requestId = 512
+21:37:04.970 [nacos-grpc-client-executor-3408] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [52856c2b-816b-4412-a1aa-dc18891603c1] Ack server push request, request = NotifySubscriberRequest, requestId = 512

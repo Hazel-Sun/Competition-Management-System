@@ -1,0 +1,2 @@
+10:27:30.740 [nacos-grpc-client-executor-5949] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [b6076e46-671e-4742-86b0-f05f6e50bbd3] Receive server push request, request = NotifySubscriberRequest, requestId = 113
+10:27:30.746 [nacos-grpc-client-executor-5949] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [b6076e46-671e-4742-86b0-f05f6e50bbd3] Ack server push request, request = NotifySubscriberRequest, requestId = 113

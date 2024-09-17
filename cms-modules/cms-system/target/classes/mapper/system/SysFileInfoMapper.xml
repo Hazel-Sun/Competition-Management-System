@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cms.system.mapper.SysFileInfoMapper">
+
+    <resultMap type="SysFileInfo" id="SysFileInfoResult">
+        <result property="fileId"    column="file_id"    />
+        <result property="fileName"    column="file_name"    />
+        <result property="filePath"    column="file_path"    />
+        <result property="fileType"    column="file_type"    />
+        <result property="createBy"    column="create_by"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="squadId"    column="squad_id"    />
+        <result property="compId"    column="comp_id"    />
+        <association property="comp"     column="comp_id"  javaType="SysComp" resultMap="SysCompResult"/>
+        <association property="squad"       column="squad_id"   javaType="SysSquad" resultMap="SysSquadResult"/>
+    </resultMap>
+
+    <resultMap id="SysCompResult" type="SysComp">
+        <result property="compId"       column="comp_id"        />
+        <result property="compName"     column="comp_name"      />
+    </resultMap>
+    <resultMap id="SysSquadResult" type="SysSquad">
+        <result property="squadId"      column="squad_id"       />
+        <result property="squadName"    column="squad_name"     />
+        <result property="squadLeader"  column="squad_leader"   />
+        <result property="squadTeacher" column="squad_teacher"  />
+        <result property="squadMember"  column="squad_member"   />
+    </resultMap>
+
+    <sql id="selectSysFileInfoVo">
+        select f.file_id, f.file_name, f.file_path, f.file_type, f.create_by, f.create_time, f.squad_id, f.comp_id
+        from sys_file_info f
+            left join sys_squad s on s.squad_id=f.squad_id
+            left join sys_comp c on c.comp_id=f.comp_id
+            left join sys_user_squad us on us.squad_id=s.squad_id
+    </sql>
+
+    <select id="selectSysFileInfoList" parameterType="SysFileInfo" resultMap="SysFileInfoResult">
+        select f.file_id, f.file_name, f.file_path, f.file_type, f.create_by, f.create_time, f.squad_id, f.comp_id,
+        c.comp_name,s.squad_name,s.squad_leader,s.squad_teacher,s.squad_member
+        from sys_file_info f
+        left join sys_squad s on s.squad_id=f.squad_id
+        left join sys_comp c on c.comp_id=f.comp_id
+        left join sys_user_squad us on us.squad_id=s.squad_id
+        <where>
+            <if test="fileName != null  and fileName != ''"> and f.file_name like concat('%', #{fileName}, '%')</if>
+            <if test="filePath != null  and filePath != ''"> and f.file_path = #{filePath}</if>
+            <if test="fileType != null  and fileType != ''"> and f.file_type = #{fileType}</if>
+            <if test="squadId != null "> and f.squad_id = #{squadId}</if>
+            <if test="compId != null "> and f.comp_id = #{compId}</if>
+            <!-- 数据范围过滤 -->
+            ${params.dataScope}
+        </where>
+    </select>
+
+    <select id="selectSysFileInfoByFileId" parameterType="Long" resultMap="SysFileInfoResult">
+        <include refid="selectSysFileInfoVo"/>
+        where file_id = #{fileId}
+    </select>
+
+    <insert id="insertSysFileInfo" parameterType="SysFileInfo" useGeneratedKeys="true" keyProperty="fileId">
+        insert into sys_file_info
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="fileName != null">file_name,</if>
+            <if test="filePath != null">file_path,</if>
+            <if test="fileType != null">file_type,</if>
+            <if test="createBy != null">create_by,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="squadId != null">squad_id,</if>
+            <if test="compId != null">comp_id,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="fileName != null">#{fileName},</if>
+            <if test="filePath != null">#{filePath},</if>
+            <if test="fileType != null">#{fileType},</if>
+            <if test="createBy != null">#{createBy},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="squadId != null">#{squadId},</if>
+            <if test="compId != null">#{compId},</if>
+         </trim>
+    </insert>
+
+    <update id="updateSysFileInfo" parameterType="SysFileInfo">
+        update sys_file_info
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="fileName != null">file_name = #{fileName},</if>
+            <if test="filePath != null">file_path = #{filePath},</if>
+            <if test="fileType != null">file_type = #{fileType},</if>
+            <if test="createBy != null">create_by = #{createBy},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="squadId != null">squad_id = #{squadId},</if>
+            <if test="compId != null">comp_id = #{compId},</if>
+        </trim>
+        where file_id = #{fileId}
+    </update>
+
+    <delete id="deleteSysFileInfoByFileId" parameterType="Long">
+        delete from sys_file_info where file_id = #{fileId}
+    </delete>
+
+    <delete id="deleteSysFileInfoByFileIds" parameterType="String">
+        delete from sys_file_info where file_id in
+        <foreach item="fileId" collection="array" open="(" separator="," close=")">
+            #{fileId}
+        </foreach>
+    </delete>
+</mapper>

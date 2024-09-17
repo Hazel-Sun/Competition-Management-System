@@ -1,0 +1,14 @@
+21:42:03.515 [reactor-http-nio-4] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/dict/data/type/sys_file_info_type
+21:42:03.515 [reactor-http-nio-5] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/processinfo/list
+21:42:05.354 [reactor-http-nio-7] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/auth/logout,异常信息:Connection refused: /192.168.1.6:9200
+21:42:08.229 [reactor-http-nio-8] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/user/getInfo
+21:42:08.359 [reactor-http-nio-1] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/auth/logout,异常信息:Connection refused: /192.168.1.6:9200
+21:42:34.692 [reactor-http-nio-2] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/user/getInfo
+21:42:34.954 [reactor-http-nio-3] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/auth/logout,异常信息:Connection refused: /192.168.1.6:9200
+21:42:43.674 [reactor-http-nio-4] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/user/getInfo
+21:42:44.396 [reactor-http-nio-6] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/auth/logout,异常信息:Connection refused: /192.168.1.6:9200
+21:45:00.197 [reactor-http-nio-7] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/user/getInfo
+21:45:00.239 [reactor-http-nio-1] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/auth/logout,异常信息:Network is unreachable: /192.168.1.6:9200
+21:46:12.416 [reactor-http-nio-4] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/user/getInfo
+21:48:45.319 [boundedElastic-16] ERROR c.a.n.c.r.client - [printIfErrorEnabled,99] - Send request fail, request = ServiceListRequest{headers={}, requestId='null'}, retryTimes = 0, errorMessage = java.lang.InterruptedException
+21:48:45.323 [boundedElastic-12] ERROR c.a.n.c.r.client - [printIfErrorEnabled,99] - Send request fail, request = ConfigQueryRequest{headers={}, requestId='null'}, retryTimes = 0, errorMessage = java.lang.InterruptedException

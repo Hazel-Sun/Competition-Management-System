@@ -1,0 +1,1 @@
+23:12:46.498 [boundedElastic-12] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/competition/squad/list,异常信息:503 SERVICE_UNAVAILABLE "Unable to find instance for cms-competition"

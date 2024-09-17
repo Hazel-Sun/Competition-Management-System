@@ -1,0 +1,4 @@
+02:11:24.614 [boundedElastic-5] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/system/notice/list,异常信息:503 SERVICE_UNAVAILABLE "Unable to find instance for cms-system"
+02:11:24.614 [boundedElastic-4] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/system/dict/data/type/sys_notice_status,异常信息:503 SERVICE_UNAVAILABLE "Unable to find instance for cms-system"
+02:11:24.642 [boundedElastic-4] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/system/dict/data/type/sys_notice_type,异常信息:503 SERVICE_UNAVAILABLE "Unable to find instance for cms-system"
+21:54:22.776 [reactor-http-nio-6] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/role/authUser/allocatedList

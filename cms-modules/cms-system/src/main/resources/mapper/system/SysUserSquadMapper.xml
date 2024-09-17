@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cms.system.mapper.SysUserSquadMapper">
+
+	<resultMap type="SysUserSquad" id="SysUserSquadResult">
+		<result property="userId"     column="user_id"      />
+		<result property="squadId"     column="squad_id"      />
+	</resultMap>
+
+	<delete id="deleteUserSquadByUserId" parameterType="Long">
+		delete from sys_user_squad where user_id=#{userId}
+	</delete>
+
+	<select id="countUserSquadBySquadId" resultType="Integer">
+	    select count(1) from sys_user_squad where squad_id=#{squadId}
+	</select>
+
+	<delete id="deleteUserSquad" parameterType="Long">
+ 		delete from sys_user_squad where user_id in
+ 		<foreach collection="array" item="userId" open="(" separator="," close=")">
+ 			#{userId}
+        </foreach>
+ 	</delete>
+
+	<insert id="batchUserSquad">
+		insert into sys_user_squad(user_id, squad_id) values
+		<foreach item="item" index="index" collection="list" separator=",">
+			(#{item.userId},#{item.squadId})
+		</foreach>
+	</insert>
+
+	<delete id="deleteUserSquadInfo" parameterType="SysUserSquad">
+		delete from sys_user_squad where user_id=#{userId} and squad_id=#{squadId}
+	</delete>
+
+	<delete id="deleteUserSquadInfos">
+	    delete from sys_user_squad where squad_id=#{squadId} and user_id in
+ 	    <foreach collection="userIds" item="userId" open="(" separator="," close=")">
+ 	        #{userId}
+            </foreach>
+	</delete>
+
+</mapper>

@@ -1,0 +1,25 @@
+23:18:22.800 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+23:18:22.822 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+23:18:23.132 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client - [shutdown,454] - Shutdown rpc client, set status to shutdown
+23:18:23.133 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client - [shutdown,456] - Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@e4f862[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+23:18:23.133 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client - [closeConnection,591] - Close current connection 1685026074383_127.0.0.1_65017
+23:18:23.141 [nacos-grpc-client-executor-4442] INFO  c.a.n.c.r.c.g.GrpcClient - [printIfInfoEnabled,60] - [1685026074383_127.0.0.1_65017]Ignore complete event,isRunning:false,isAbandon=false
+23:18:23.149 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.c.g.GrpcClient - [shutdown,85] - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@eeef452[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 4443]
+23:18:23.309 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,211] - dynamic-datasource start closing ....
+23:18:23.317 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2138] - {dataSource-1} closing ...
+23:18:23.323 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2211] - {dataSource-1} closed
+23:18:23.324 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,215] - dynamic-datasource all closed success,bye
+23:27:39.499 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+23:27:39.973 [main] INFO  c.a.n.c.r.client - [lambda$createClient$0,80] - [RpcClientFactory] create a new rpc client of f5009027-9129-48c7-9d5a-1f1d1bb99e55_config-0
+23:27:40.006 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 22 ms to scan 1 urls, producing 3 keys and 6 values 
+23:27:40.031 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 14 ms to scan 1 urls, producing 4 keys and 9 values 
+23:27:40.045 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 12 ms to scan 1 urls, producing 3 keys and 10 values 
+23:27:40.059 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 11 ms to scan 1 urls, producing 1 keys and 5 values 
+23:27:40.072 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 11 ms to scan 1 urls, producing 1 keys and 7 values 
+23:27:40.085 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 10 ms to scan 1 urls, producing 2 keys and 8 values 
+23:27:40.087 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [f5009027-9129-48c7-9d5a-1f1d1bb99e55_config-0] RpcClient init label, labels = {module=config, Vipserver-Tag=null, source=sdk, Amory-Tag=null, Location-Tag=null, taskId=0, AppName=unknown}
+23:27:40.088 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [f5009027-9129-48c7-9d5a-1f1d1bb99e55_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$468/0x0000000800f3e300
+23:27:40.088 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [f5009027-9129-48c7-9d5a-1f1d1bb99e55_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$469/0x0000000800f3e528
+23:27:40.088 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [f5009027-9129-48c7-9d5a-1f1d1bb99e55_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+23:27:40.089 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [f5009027-9129-48c7-9d5a-1f1d1bb99e55_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+23:27:40.094 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [f5009027-9129-48c7-9d5a-1f1d1bb99e55_config-0] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}

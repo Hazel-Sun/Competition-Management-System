@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cms.system.mapper.SysSquadMapper">
+
+    <resultMap type="SysSquad" id="SysSquadResult">
+        <result property="squadId"    column="squad_id"    />
+        <result property="squadName"    column="squad_name"    />
+        <result property="squadLeader"    column="squad_leader"    />
+        <result property="memberNum"    column="member_num"    />
+        <result property="squadMember"    column="squad_member"    />
+        <result property="squadTeacher"    column="squad_teacher"    />
+        <result property="phone"    column="phone"    />
+        <result property="email"    column="email"    />
+        <result property="status"    column="status"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="createBy"    column="create_by"    />
+        <result property="updateTime"    column="update_time"    />
+        <result property="updateBy"    column="update_by"    />
+        <result property="compId"      column="comp_id"     />
+        <association property="comp"    column="comp_id"    javaType="SysComp"   resultMap="SysCompResult"/>
+    </resultMap>
+
+    <resultMap id="SysCompResult" type="SysComp">
+        <result property="compId"       column="comp_id"        />
+        <result property="compName"     column="comp_name"      />
+    </resultMap>
+
+    <resultMap id="SysSquadSysHonorResult" type="SysSquad" extends="SysSquadResult">
+        <collection property="sysHonorList" notNullColumn="sub_honor_id" javaType="java.util.List" resultMap="SysHonorResult" />
+        <collection property="sysFileInfoList" notNullColumn="sub_file_id" javaType="java.util.List" resultMap="SysFileInfoResult" />
+        <collection property="sysUserSquadList" notNullColumn="sub_user_id" javaType="java.util.List" resultMap="SysUserSquadResult"/>
+    </resultMap>
+
+    <resultMap id="SysUserSquadResult" type="SysUserSquad">
+        <result property="userId" column="sub_user_id"/>
+        <result property="squadId" column="sub_squad_id"/>
+    </resultMap>
+
+
+    <resultMap type="SysHonor" id="SysHonorResult">
+        <result property="honorId"    column="sub_honor_id"    />
+        <result property="honorName"    column="sub_honor_name"    />
+        <result property="honorType"    column="sub_honor_type"    />
+        <result property="compId"    column="sub_comp_id"    />
+        <result property="squadId"    column="sub_squad_id"    />
+        <result property="honorContent"    column="sub_honor_content"    />
+        <result property="honorDate"    column="sub_honor_date"    />
+        <result property="status"    column="sub_status"    />
+        <result property="createTime"    column="sub_create_time"    />
+        <result property="createBy"    column="sub_create_by"    />
+    </resultMap>
+
+    <resultMap type="SysFileInfo" id="SysFileInfoResult">
+        <result property="fileId"    column="sub_file_id"    />
+        <result property="fileName"    column="sub_file_name"    />
+        <result property="filePath"    column="sub_file_path"    />
+        <result property="fileType"    column="sub_file_type"    />
+        <result property="createBy"    column="sub_create_by"    />
+        <result property="createTime"    column="sub_create_time"    />
+        <result property="squadId"    column="sub_squad_id"    />
+        <result property="compId"    column="sub_comp_id"    />
+    </resultMap>
+
+    <sql id="selectSysSquadVo">
+        select a.squad_id, a.squad_name, a.squad_leader, a.member_num, a.squad_member, a.squad_teacher, a.phone, a.email, a.status, a.create_time, a.create_by, a.update_time, a.update_by,a.comp_id
+               from sys_squad a
+                        left join sys_comp c on c.comp_id = a.comp_id
+                        left join sys_user_squad ua on ua.squad_id = a.squad_id
+                        left join sys_user u on u.user_id = ua.user_id
+
+    </sql>
+
+    <select id="selectSysSquadList" parameterType="SysSquad" resultMap="SysSquadResult">
+        select a.squad_id, a.squad_name, a.squad_leader, a.member_num, a.squad_member, a.squad_teacher, a.phone, a.email, a.status, a.create_time, a.create_by, a.update_time, a.update_by,a.comp_id,c.comp_name,ua.user_id
+        from sys_squad a
+        left join sys_comp c on c.comp_id = a.comp_id
+        left join sys_user_squad ua on ua.squad_id = a.squad_id
+        left join sys_user u on u.user_id = ua.user_id
+        <where>
+            <if test="squadName != null  and squadName != ''"> and a.squad_name like concat('%', #{squadName}, '%')</if>
+            <if test="squadLeader != null  and squadLeader != ''"> and a.squad_leader = #{squadLeader}</if>
+            <if test="memberNum != null "> and a.member_num = #{memberNum}</if>
+            <if test="squadMember != null  and squadMember != ''"> and a.squad_member = #{squadMember}</if>
+            <if test="squadTeacher != null  and squadTeacher != ''"> and a.squad_teacher = #{squadTeacher}</if>
+            <if test="phone != null  and phone != ''"> and a.phone = #{phone}</if>
+            <if test="email != null  and email != ''"> and a.email = #{email}</if>
+            <if test="status != null  and status != ''"> and a.status = #{status}</if>
+            <if test="compId != null  and status != ''"> and a.comp_id = #{compId}</if>
+            <!-- 数据范围过滤 -->
+            ${params.dataScope}
+        </where>
+    </select>
+
+    <select id="selectSysSquadBySquadId" parameterType="Long" resultMap="SysSquadSysHonorResult">
+        select a.squad_id, a.squad_name, a.squad_leader, a.member_num, a.squad_member, a.squad_teacher, a.phone, a.email, a.status, a.create_time, a.create_by, a.update_time, a.update_by,a.comp_id,
+               b.honor_id as sub_honor_id, b.honor_name as sub_honor_name, b.honor_type as sub_honor_type, b.comp_id as sub_comp_id, b.squad_id as sub_squad_id, b.honor_content as sub_honor_content, b.honor_date as sub_honor_date, b.status as sub_status, b.create_time as sub_create_time, b.create_by as sub_create_by,
+               c.file_id as sub_file_id, c.file_name as sub_file_name, c.file_path as sub_file_path, c.file_type as sub_file_type, c.create_by as sub_create_by, c.create_time as sub_create_time, c.squad_id as sub_squad_id, c.comp_id as sub_comp_id,
+               us.squad_id as sub_squad_id,us.user_id as sub_user_id
+
+        from sys_squad a
+                 left join sys_honor b on b.squad_id = a.squad_id
+                 left join sys_file_info c on c.squad_id = a.squad_id
+                 left join sys_user_squad us on us.squad_id=a.squad_id
+        where a.squad_id = #{squadId}
+    </select>
+
+    <insert id="insertSysSquad" parameterType="SysSquad" useGeneratedKeys="true" keyProperty="squadId">
+        insert into sys_squad
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="squadId != null">squad_id,</if>
+            <if test="squadName != null and squadName != ''">squad_name,</if>
+            <if test="squadLeader != null">squad_leader,</if>
+            <if test="memberNum != null">member_num,</if>
+            <if test="squadMember != null">squad_member,</if>
+            <if test="squadTeacher != null">squad_teacher,</if>
+            <if test="phone != null">phone,</if>
+            <if test="email != null">email,</if>
+            <if test="status != null and status != ''">status,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="createBy != null">create_by,</if>
+            <if test="updateTime != null">update_time,</if>
+            <if test="updateBy != null">update_by,</if>
+            <if test="compId != null">comp_id,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="squadId != null">#{squadId},</if>
+            <if test="squadName != null and squadName != ''">#{squadName},</if>
+            <if test="squadLeader != null">#{squadLeader},</if>
+            <if test="memberNum != null">#{memberNum},</if>
+            <if test="squadMember != null">#{squadMember},</if>
+            <if test="squadTeacher != null">#{squadTeacher},</if>
+            <if test="phone != null">#{phone},</if>
+            <if test="email != null">#{email},</if>
+            <if test="status != null and status != ''">#{status},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="createBy != null">#{createBy},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+            <if test="updateBy != null">#{updateBy},</if>
+            <if test="compId != null">#{compId},</if>
+         </trim>
+    </insert>
+
+    <update id="updateSysSquad" parameterType="SysSquad">
+        update sys_squad
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="squadName != null and squadName != ''">squad_name = #{squadName},</if>
+            <if test="squadLeader != null">squad_leader = #{squadLeader},</if>
+            <if test="memberNum != null">member_num = #{memberNum},</if>
+            <if test="squadMember != null">squad_member = #{squadMember},</if>
+            <if test="squadTeacher != null">squad_teacher = #{squadTeacher},</if>
+            <if test="phone != null">phone = #{phone},</if>
+            <if test="email != null">email = #{email},</if>
+            <if test="status != null and status != ''">status = #{status},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="createBy != null">create_by = #{createBy},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            <if test="compId != null">comp_id = #{compId},</if>
+        </trim>
+        where squad_id = #{squadId}
+    </update>
+
+    <delete id="deleteSysSquadBySquadId" parameterType="Long">
+        delete from sys_squad where squad_id = #{squadId}
+    </delete>
+
+    <delete id="deleteSysSquadBySquadIds" parameterType="String">
+        delete from sys_squad where squad_id in
+        <foreach item="squadId" collection="array" open="(" separator="," close=")">
+            #{squadId}
+        </foreach>
+    </delete>
+    <delete id="deleteSysHonorBySquadIds" parameterType="String">
+        delete from sys_honor where squad_id in
+        <foreach item="squadId" collection="array" open="(" separator="," close=")">
+            #{squadId}
+        </foreach>
+    </delete>
+
+    <delete id="deleteSysHonorBySquadId" parameterType="Long">
+        delete from sys_honor where squad_id = #{squadId}
+    </delete>
+
+    <insert id="batchSysHonor">
+        insert into sys_honor( honor_id, honor_name, honor_type, comp_id, squad_id, honor_content, honor_date, status, create_time, create_by) values
+        <foreach item="item" index="index" collection="list" separator=",">
+            ( #{item.honorId}, #{item.honorName}, #{item.honorType}, #{item.compId}, #{item.squadId}, #{item.honorContent}, #{item.honorDate}, #{item.status}, #{item.createTime}, #{item.createBy})
+        </foreach>
+    </insert>
+    <delete id="deleteSysFileInfoBySquadIds" parameterType="String">
+        delete from sys_file_info where squad_id in
+        <foreach item="squadId" collection="array" open="(" separator="," close=")">
+            #{squadId}
+        </foreach>
+    </delete>
+
+    <delete id="deleteSysFileInfoBySquadId" parameterType="Long">
+        delete from sys_file_info where squad_id = #{squadId}
+    </delete>
+    <delete id="deleteSysUserSquadBySquadId" parameterType="Long">
+        delete from sys_user_squad where squad_id = #{squadId}
+    </delete>
+    <delete id="deleteSysUserSquadBySquadIds" parameterType="String">
+        delete from sys_user_squad where squad_id in
+        <foreach item="squadId" collection="array" open="(" separator="," close=")">
+            #{squadId}
+        </foreach>
+    </delete>
+
+    <insert id="batchSysFileInfo">
+        insert into sys_file_info( file_id, file_name, file_path, file_type, create_by, create_time, squad_id, comp_id) values
+        <foreach item="item" index="index" collection="list" separator=",">
+            ( #{item.fileId}, #{item.fileName}, #{item.filePath}, #{item.fileType}, #{item.createBy}, #{item.createTime}, #{item.squadId}, #{item.compId})
+        </foreach>
+    </insert>
+    <insert id="batchSysUserSquad">
+        insert into sys_user_squad(user_id, squad_id) values
+        <foreach item="item" index="index" collection="list" separator=",">
+            (#{item.userId},#{item.squadId})
+        </foreach>
+    </insert>
+    <select id="countUserSquadBySquadId" resultType="Integer">
+        select count(1) from sys_user_squad where squad_id=#{squadId}
+    </select>
+</mapper>

@@ -1,0 +1,18 @@
+00:46:19.511 [reactor-http-nio-4] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/dict/data/type/sys_normal_disable
+00:46:19.511 [reactor-http-nio-6] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/user/list
+00:46:19.512 [reactor-http-nio-7] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/user/deptTree
+00:46:19.512 [reactor-http-nio-8] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/config/configKey/sys.user.initPassword
+00:46:19.512 [reactor-http-nio-5] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/dict/data/type/sys_user_sex
+19:16:27.409 [reactor-http-nio-6] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/user/getInfo
+19:16:40.678 [reactor-http-nio-1] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/user/getInfo
+19:16:40.775 [reactor-http-nio-2] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/auth/logout,异常信息:Host is down: /192.168.1.4:9200
+19:16:57.509 [reactor-http-nio-8] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/auth/logout,异常信息:connection timed out: /192.168.1.4:9200
+19:17:55.384 [reactor-http-nio-3] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/role/authUser/allocatedList
+19:18:04.096 [reactor-http-nio-6] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/user/getInfo
+19:18:04.108 [reactor-http-nio-7] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/auth/logout,异常信息:Host is down: /192.168.1.4:9200
+19:18:12.976 [reactor-http-nio-8] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/user/getInfo
+19:18:12.986 [reactor-http-nio-1] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/auth/logout,异常信息:Host is down: /192.168.1.4:9200
+19:18:27.110 [reactor-http-nio-5] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/auth/logout,异常信息:connection timed out: /192.168.1.4:9200
+19:18:34.630 [reactor-http-nio-2] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/user/getInfo
+19:18:34.657 [reactor-http-nio-4] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/auth/logout,异常信息:Host is down: /192.168.1.4:9200
+19:20:40.813 [reactor-http-nio-4] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/user/getInfo

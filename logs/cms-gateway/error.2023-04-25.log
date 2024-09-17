@@ -1,0 +1,11 @@
+16:10:55.369 [reactor-http-nio-4] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/user/getInfo
+16:17:11.585 [reactor-http-nio-2] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/system/squad/,异常信息:Network is unreachable: /10.110.28.53:9201
+16:17:15.619 [reactor-http-nio-3] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/system/squad/5,异常信息:Network is unreachable: /10.110.28.53:9201
+16:17:18.018 [reactor-http-nio-4] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/system/user/getInfo,异常信息:Network is unreachable: /10.110.28.53:9201
+16:17:18.055 [reactor-http-nio-6] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/auth/logout,异常信息:Network is unreachable: /10.110.28.53:9200
+16:17:41.549 [reactor-http-nio-7] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/system/user/getInfo,异常信息:Network is unreachable: /10.110.28.53:9201
+16:17:41.582 [reactor-http-nio-8] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/auth/logout,异常信息:Network is unreachable: /10.110.28.53:9200
+16:26:50.005 [reactor-http-nio-4] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/code/gen/list,异常信息:connection timed out: /10.110.28.53:9202
+16:26:54.463 [reactor-http-nio-8] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/code/gen/list,异常信息:connection timed out: /10.110.28.53:9202
+20:01:12.353 [reactor-http-nio-3] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/auth/logout,异常信息:Host is down: /10.110.28.53:9200
+20:01:31.789 [reactor-http-nio-1] ERROR c.c.g.h.GatewayExceptionHandler - [handle,52] - [网关异常处理]请求路径:/system/user/getInfo,异常信息:connection timed out: /172.20.10.2:9201

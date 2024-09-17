@@ -1,0 +1,5 @@
+08:20:50.846 [reactor-http-nio-6] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/dict/data/type/sys_user_sex
+08:20:50.846 [reactor-http-nio-1] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/config/configKey/sys.user.initPassword
+08:20:50.846 [reactor-http-nio-8] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/user/deptTree
+08:20:50.846 [reactor-http-nio-7] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/user/list
+20:27:50.275 [reactor-http-nio-5] ERROR c.c.g.f.AuthFilter - [unauthorizedResponse,104] - [鉴权异常处理]请求路径:/system/role/list

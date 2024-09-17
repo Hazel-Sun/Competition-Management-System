@@ -1,0 +1,11 @@
+09:39:47.898 [nacos-grpc-client-executor-6716] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [b92752e1-6421-453e-9427-5b193f655a1a] Receive server push request, request = NotifySubscriberRequest, requestId = 77
+09:39:48.021 [nacos-grpc-client-executor-6716] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [b92752e1-6421-453e-9427-5b193f655a1a] Ack server push request, request = NotifySubscriberRequest, requestId = 77
+09:39:50.431 [nacos-grpc-client-executor-6717] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [b92752e1-6421-453e-9427-5b193f655a1a] Receive server push request, request = NotifySubscriberRequest, requestId = 79
+09:39:50.432 [nacos-grpc-client-executor-6717] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [b92752e1-6421-453e-9427-5b193f655a1a] Ack server push request, request = NotifySubscriberRequest, requestId = 79
+09:39:51.271 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+09:39:51.276 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+09:39:51.588 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client - [shutdown,454] - Shutdown rpc client, set status to shutdown
+09:39:51.588 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client - [shutdown,456] - Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@1aea9908[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+09:39:51.589 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client - [closeConnection,591] - Close current connection 1706248414089_127.0.0.1_53056
+09:39:51.592 [nacos-grpc-client-executor-6720] INFO  c.a.n.c.r.c.g.GrpcClient - [printIfInfoEnabled,60] - [1706248414089_127.0.0.1_53056]Ignore complete event,isRunning:false,isAbandon=false
+09:39:51.619 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.c.g.GrpcClient - [shutdown,85] - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@2ba3a54e[Running, pool size = 6, active threads = 0, queued tasks = 0, completed tasks = 6745]

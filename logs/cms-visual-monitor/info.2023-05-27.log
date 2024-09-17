@@ -1,0 +1,227 @@
+00:02:30.939 [main] INFO  c.a.n.c.r.client - [lambda$createClient$0,80] - [RpcClientFactory] create a new rpc client of 28d4d688-5a39-4dac-aa4f-f5aa5966649c_config-0
+00:02:31.039 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 57 ms to scan 1 urls, producing 3 keys and 6 values 
+00:02:31.099 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 35 ms to scan 1 urls, producing 4 keys and 9 values 
+00:02:31.149 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 43 ms to scan 1 urls, producing 3 keys and 10 values 
+00:02:31.189 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 21 ms to scan 1 urls, producing 1 keys and 5 values 
+00:02:31.218 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 21 ms to scan 1 urls, producing 1 keys and 7 values 
+00:02:31.246 [main] INFO  o.r.Reflections - [scan,232] - Reflections took 22 ms to scan 1 urls, producing 2 keys and 8 values 
+00:02:31.250 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [28d4d688-5a39-4dac-aa4f-f5aa5966649c_config-0] RpcClient init label, labels = {module=config, Vipserver-Tag=null, source=sdk, Amory-Tag=null, Location-Tag=null, taskId=0, AppName=unknown}
+00:02:31.252 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [28d4d688-5a39-4dac-aa4f-f5aa5966649c_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$458/0x0000000800ebaca8
+00:02:31.254 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [28d4d688-5a39-4dac-aa4f-f5aa5966649c_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$459/0x0000000800ebaed0
+00:02:31.256 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [28d4d688-5a39-4dac-aa4f-f5aa5966649c_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+00:02:31.258 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [28d4d688-5a39-4dac-aa4f-f5aa5966649c_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+00:02:31.270 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [28d4d688-5a39-4dac-aa4f-f5aa5966649c_config-0] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+00:02:32.389 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [28d4d688-5a39-4dac-aa4f-f5aa5966649c_config-0] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1685116952075_127.0.0.1_49643
+00:02:32.391 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [28d4d688-5a39-4dac-aa4f-f5aa5966649c_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+00:02:32.391 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [28d4d688-5a39-4dac-aa4f-f5aa5966649c_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$470/0x0000000800fbb330
+00:02:32.392 [com.alibaba.nacos.client.remote.worker] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [28d4d688-5a39-4dac-aa4f-f5aa5966649c_config-0] Notify connected event to listeners.
+00:02:32.577 [main] INFO  c.c.m.m.CMSMonitorApplication - [logStartupProfileInfo,637] - The following 1 profile is active: "dev"
+00:02:36.555 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9100"]
+00:02:36.556 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+00:02:36.556 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.70]
+00:02:36.727 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+00:02:37.759 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+00:02:39.250 [main] INFO  c.a.n.c.r.client - [lambda$createClient$0,80] - [RpcClientFactory] create a new rpc client of ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8
+00:02:39.251 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] RpcClient init label, labels = {module=naming, source=sdk}
+00:02:39.253 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+00:02:39.253 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+00:02:39.254 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+00:02:39.255 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+00:02:39.399 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1685116959278_127.0.0.1_49671
+00:02:39.400 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+00:02:39.400 [com.alibaba.nacos.client.remote.worker] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Notify connected event to listeners.
+00:02:39.400 [main] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$470/0x0000000800fbb330
+00:02:39.440 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9100"]
+00:02:39.486 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP cms-monitor 10.110.28.137:9100 register finished
+00:02:39.784 [main] INFO  c.c.m.m.CMSMonitorApplication - [logStarted,61] - Started CMSMonitorApplication in 11.747 seconds (JVM running for 13.356)
+00:02:39.799 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=cms-monitor.yml, group=DEFAULT_GROUP
+00:02:39.799 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=cms-monitor, group=DEFAULT_GROUP
+00:02:39.800 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=cms-monitor-dev.yml, group=DEFAULT_GROUP
+00:02:39.906 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:02:39.973 [nacos-grpc-client-executor-28] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Receive server push request, request = NotifySubscriberRequest, requestId = 6
+00:02:39.973 [nacos-grpc-client-executor-28] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Ack server push request, request = NotifySubscriberRequest, requestId = 6
+00:02:40.071 [nacos-grpc-client-executor-29] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Receive server push request, request = NotifySubscriberRequest, requestId = 7
+00:02:40.075 [nacos-grpc-client-executor-29] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Ack server push request, request = NotifySubscriberRequest, requestId = 7
+00:02:40.094 [nacos-grpc-client-executor-30] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Receive server push request, request = NotifySubscriberRequest, requestId = 8
+00:02:40.095 [nacos-grpc-client-executor-30] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Ack server push request, request = NotifySubscriberRequest, requestId = 8
+00:02:40.278 [nacos-grpc-client-executor-31] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Receive server push request, request = NotifySubscriberRequest, requestId = 9
+00:02:40.281 [nacos-grpc-client-executor-31] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Ack server push request, request = NotifySubscriberRequest, requestId = 9
+00:03:10.348 [nacos-grpc-client-executor-63] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Receive server push request, request = NotifySubscriberRequest, requestId = 15
+00:03:10.349 [nacos-grpc-client-executor-63] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Ack server push request, request = NotifySubscriberRequest, requestId = 15
+00:03:10.354 [nacos-grpc-client-executor-64] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Receive server push request, request = NotifySubscriberRequest, requestId = 16
+00:03:10.356 [nacos-grpc-client-executor-64] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Ack server push request, request = NotifySubscriberRequest, requestId = 16
+00:18:39.695 [nacos-grpc-client-executor-483] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Receive server push request, request = NotifySubscriberRequest, requestId = 18
+00:18:39.699 [nacos-grpc-client-executor-483] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Ack server push request, request = NotifySubscriberRequest, requestId = 18
+00:18:40.182 [Nacos-Watch-Task-Scheduler-1] INFO  d.c.b.a.s.c.d.InstanceDiscoveryListener - [lambda$removeStaleInstances$4,138] - Instance 'f4bee8207508' missing in DiscoveryClient services and will be removed.
+00:18:53.032 [nacos-grpc-client-executor-496] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Receive server push request, request = NotifySubscriberRequest, requestId = 21
+00:18:53.038 [nacos-grpc-client-executor-496] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Ack server push request, request = NotifySubscriberRequest, requestId = 21
+00:19:44.307 [nacos-grpc-client-executor-517] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Receive server push request, request = NotifySubscriberRequest, requestId = 25
+00:19:44.309 [nacos-grpc-client-executor-517] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Ack server push request, request = NotifySubscriberRequest, requestId = 25
+00:19:48.636 [reactor-http-nio-1] INFO  d.c.b.a.s.s.StatusUpdater - [logError,130] - Couldn't retrieve status for Instance(id=f4bee8207508, version=6, registration=Registration(name=cms-system, managementUrl=http://10.110.28.137:9201/actuator, healthUrl=http://10.110.28.137:9201/actuator/health, serviceUrl=http://10.110.28.137:9201, source=discovery), registered=true, statusInfo=StatusInfo(status=UP, details={}), statusTimestamp=2023-05-26T16:19:10.228589Z, info=Info(values={}), endpoints=Endpoints(endpoints={sentinel=Endpoint(id=sentinel, url=http://10.110.28.137:9201/actuator/sentinel), caches=Endpoint(id=caches, url=http://10.110.28.137:9201/actuator/caches), loggers=Endpoint(id=loggers, url=http://10.110.28.137:9201/actuator/loggers), nacosconfig=Endpoint(id=nacosconfig, url=http://10.110.28.137:9201/actuator/nacosconfig), health=Endpoint(id=health, url=http://10.110.28.137:9201/actuator/health), refresh=Endpoint(id=refresh, url=http://10.110.28.137:9201/actuator/refresh), env=Endpoint(id=env, url=http://10.110.28.137:9201/actuator/env), nacosdiscovery=Endpoint(id=nacosdiscovery, url=http://10.110.28.137:9201/actuator/nacosdiscovery), serviceregistry=Endpoint(id=serviceregistry, url=http://10.110.28.137:9201/actuator/serviceregistry), heapdump=Endpoint(id=heapdump, url=http://10.110.28.137:9201/actuator/heapdump), features=Endpoint(id=features, url=http://10.110.28.137:9201/actuator/features), scheduledtasks=Endpoint(id=scheduledtasks, url=http://10.110.28.137:9201/actuator/scheduledtasks), mappings=Endpoint(id=mappings, url=http://10.110.28.137:9201/actuator/mappings), beans=Endpoint(id=beans, url=http://10.110.28.137:9201/actuator/beans), configprops=Endpoint(id=configprops, url=http://10.110.28.137:9201/actuator/configprops), threaddump=Endpoint(id=threaddump, url=http://10.110.28.137:9201/actuator/threaddump), metrics=Endpoint(id=metrics, url=http://10.110.28.137:9201/actuator/metrics), conditions=Endpoint(id=conditions, url=http://10.110.28.137:9201/actuator/conditions), info=Endpoint(id=info, url=http://10.110.28.137:9201/actuator/info)}), buildVersion=null, tags=Tags(values={}))
+org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: /10.110.28.137:9201; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /10.110.28.137:9201
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:141)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ Request to GET health [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:141)
+		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:55)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4490)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onError(MonoFlatMapMany.java:204)
+		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:225)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:274)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:415)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onNext(FluxConcatMap.java:251)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.EmitterProcessor.drain(EmitterProcessor.java:537)
+		at reactor.core.publisher.EmitterProcessor.tryEmitNext(EmitterProcessor.java:343)
+		at reactor.core.publisher.SinkManySerialized.tryEmitNext(SinkManySerialized.java:100)
+		at reactor.core.publisher.InternalManySink.emitNext(InternalManySink.java:27)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:190)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:201)
+		at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect$ClientTransportSubscriber.onError(HttpClientConnect.java:307)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:201)
+		at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onError(DefaultPooledConnectionProvider.java:160)
+		at reactor.netty.internal.shaded.reactor.pool.AbstractPool$Borrower.fail(AbstractPool.java:475)
+		at reactor.netty.internal.shaded.reactor.pool.SimpleDequePool.lambda$drainLoop$9(SimpleDequePool.java:431)
+		at reactor.core.publisher.FluxDoOnEach$DoOnEachSubscriber.onError(FluxDoOnEach.java:186)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:201)
+		at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnectionAllocator$PooledConnectionInitializer.onError(DefaultPooledConnectionProvider.java:558)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:192)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:259)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106)
+		at reactor.core.publisher.Operators.error(Operators.java:198)
+		at reactor.core.publisher.MonoError.subscribe(MonoError.java:53)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4490)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103)
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise.tryFailure(TransportConnector.java:580)
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise.setFailure(TransportConnector.java:534)
+		at reactor.netty.transport.TransportConnector.lambda$doConnect$7(TransportConnector.java:265)
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+		at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
+		at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /10.110.28.137:9201
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:669)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:944)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+00:19:57.480 [nacos-grpc-client-executor-520] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Receive server push request, request = NotifySubscriberRequest, requestId = 28
+00:19:57.481 [nacos-grpc-client-executor-520] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Ack server push request, request = NotifySubscriberRequest, requestId = 28
+00:47:08.837 [reactor-http-nio-2] INFO  d.c.b.a.s.s.StatusUpdater - [logError,130] - Couldn't retrieve status for Instance(id=f4bee8207508, version=8, registration=Registration(name=cms-system, managementUrl=http://10.110.28.137:9201/actuator, healthUrl=http://10.110.28.137:9201/actuator/health, serviceUrl=http://10.110.28.137:9201, source=discovery), registered=true, statusInfo=StatusInfo(status=UP, details={}), statusTimestamp=2023-05-26T16:20:08.623111Z, info=Info(values={}), endpoints=Endpoints(endpoints={sentinel=Endpoint(id=sentinel, url=http://10.110.28.137:9201/actuator/sentinel), caches=Endpoint(id=caches, url=http://10.110.28.137:9201/actuator/caches), loggers=Endpoint(id=loggers, url=http://10.110.28.137:9201/actuator/loggers), nacosconfig=Endpoint(id=nacosconfig, url=http://10.110.28.137:9201/actuator/nacosconfig), health=Endpoint(id=health, url=http://10.110.28.137:9201/actuator/health), refresh=Endpoint(id=refresh, url=http://10.110.28.137:9201/actuator/refresh), env=Endpoint(id=env, url=http://10.110.28.137:9201/actuator/env), nacosdiscovery=Endpoint(id=nacosdiscovery, url=http://10.110.28.137:9201/actuator/nacosdiscovery), serviceregistry=Endpoint(id=serviceregistry, url=http://10.110.28.137:9201/actuator/serviceregistry), heapdump=Endpoint(id=heapdump, url=http://10.110.28.137:9201/actuator/heapdump), features=Endpoint(id=features, url=http://10.110.28.137:9201/actuator/features), scheduledtasks=Endpoint(id=scheduledtasks, url=http://10.110.28.137:9201/actuator/scheduledtasks), mappings=Endpoint(id=mappings, url=http://10.110.28.137:9201/actuator/mappings), beans=Endpoint(id=beans, url=http://10.110.28.137:9201/actuator/beans), configprops=Endpoint(id=configprops, url=http://10.110.28.137:9201/actuator/configprops), threaddump=Endpoint(id=threaddump, url=http://10.110.28.137:9201/actuator/threaddump), metrics=Endpoint(id=metrics, url=http://10.110.28.137:9201/actuator/metrics), conditions=Endpoint(id=conditions, url=http://10.110.28.137:9201/actuator/conditions), info=Endpoint(id=info, url=http://10.110.28.137:9201/actuator/info)}), buildVersion=null, tags=Tags(values={}))
+org.springframework.web.reactive.function.client.WebClientRequestException: Connection prematurely closed BEFORE response; nested exception is reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:141)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ Request to GET health [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:141)
+		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:55)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4490)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onError(MonoFlatMapMany.java:204)
+		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:225)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:274)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:415)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onNext(FluxConcatMap.java:251)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.EmitterProcessor.drain(EmitterProcessor.java:537)
+		at reactor.core.publisher.EmitterProcessor.tryEmitNext(EmitterProcessor.java:343)
+		at reactor.core.publisher.SinkManySerialized.tryEmitNext(SinkManySerialized.java:100)
+		at reactor.core.publisher.InternalManySink.emitNext(InternalManySink.java:27)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:190)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:201)
+		at reactor.netty.http.client.HttpClientConnect$HttpObserver.onUncaughtException(HttpClientConnect.java:399)
+		at reactor.netty.ReactorNetty$CompositeConnectionObserver.onUncaughtException(ReactorNetty.java:695)
+		at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onUncaughtException(DefaultPooledConnectionProvider.java:211)
+		at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnection.onUncaughtException(DefaultPooledConnectionProvider.java:464)
+		at reactor.netty.http.client.HttpClientOperations.onInboundClose(HttpClientOperations.java:296)
+		at reactor.netty.channel.ChannelOperationsHandler.channelInactive(ChannelOperationsHandler.java:73)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:305)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:281)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:274)
+		at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:81)
+		at io.netty.handler.codec.http.HttpContentDecoder.channelInactive(HttpContentDecoder.java:235)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:305)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:281)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:274)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelInactive(CombinedChannelDuplexHandler.java:418)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelInputClosed(ByteToMessageDecoder.java:411)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:376)
+		at io.netty.handler.codec.http.HttpClientCodec$Decoder.channelInactive(HttpClientCodec.java:329)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelInactive(CombinedChannelDuplexHandler.java:221)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:303)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:281)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:274)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelInactive(DefaultChannelPipeline.java:1405)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:301)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:281)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:901)
+		at io.netty.channel.AbstractChannel$AbstractUnsafe$7.run(AbstractChannel.java:813)
+		at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+		at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+		at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:566)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+01:13:30.219 [nacos-grpc-client-executor-1817] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Receive server push request, request = NotifySubscriberRequest, requestId = 32
+01:13:30.229 [nacos-grpc-client-executor-1817] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Ack server push request, request = NotifySubscriberRequest, requestId = 32
+01:13:41.512 [Nacos-Watch-Task-Scheduler-1] INFO  d.c.b.a.s.c.d.InstanceDiscoveryListener - [lambda$removeStaleInstances$4,138] - Instance 'f4bee8207508' missing in DiscoveryClient services and will be removed.
+01:13:45.331 [nacos-grpc-client-executor-1828] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Receive server push request, request = NotifySubscriberRequest, requestId = 35
+01:13:45.337 [nacos-grpc-client-executor-1828] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Ack server push request, request = NotifySubscriberRequest, requestId = 35
+02:47:36.258 [nacos-grpc-client-executor-3975] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Receive server push request, request = NotifySubscriberRequest, requestId = 39
+02:47:36.262 [nacos-grpc-client-executor-3975] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Ack server push request, request = NotifySubscriberRequest, requestId = 39
+02:47:37.874 [nacos-grpc-client-executor-3977] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Receive server push request, request = NotifySubscriberRequest, requestId = 43
+02:47:37.876 [nacos-grpc-client-executor-3977] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Ack server push request, request = NotifySubscriberRequest, requestId = 43
+02:47:37.877 [nacos-grpc-client-executor-3978] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Receive server push request, request = NotifySubscriberRequest, requestId = 42
+02:47:37.878 [nacos-grpc-client-executor-3978] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Ack server push request, request = NotifySubscriberRequest, requestId = 42
+02:47:37.980 [nacos-grpc-client-executor-3979] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Receive server push request, request = NotifySubscriberRequest, requestId = 44
+02:47:37.981 [nacos-grpc-client-executor-3979] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Ack server push request, request = NotifySubscriberRequest, requestId = 44
+02:47:38.083 [nacos-grpc-client-executor-3980] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Receive server push request, request = NotifySubscriberRequest, requestId = 45
+02:47:38.085 [nacos-grpc-client-executor-3980] INFO  c.a.n.c.r.client - [printIfInfoEnabled,60] - [ae9e321a-f9ba-4a56-a69e-5ea0d497f8d8] Ack server push request, request = NotifySubscriberRequest, requestId = 45
+02:47:39.593 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+02:47:39.596 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+02:47:39.902 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client - [shutdown,454] - Shutdown rpc client, set status to shutdown
+02:47:39.902 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client - [shutdown,456] - Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@56ec92f2[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+02:47:39.903 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client - [closeConnection,591] - Close current connection 1685116959278_127.0.0.1_49671
+02:47:39.904 [nacos-grpc-client-executor-3982] INFO  c.a.n.c.r.c.g.GrpcClient - [printIfInfoEnabled,60] - [1685116959278_127.0.0.1_49671]Ignore complete event,isRunning:false,isAbandon=false
+02:47:39.906 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.c.g.GrpcClient - [shutdown,85] - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@5b1b2ff9[Running, pool size = 9, active threads = 0, queued tasks = 0, completed tasks = 3983]
